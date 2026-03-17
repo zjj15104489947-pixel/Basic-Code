@@ -34,7 +34,7 @@ vector<int> bfs(int start,
                 const vector<vector<int>>& adj)
 {
     int n = adj.size() - 1;
-    vector<int> dist(n + 1, -1);
+    vector<int> dist(n + 1, -1); //记录起点到节点i的距离
     queue<int> q;
     dist[start] = 0;
     q.push(start);
